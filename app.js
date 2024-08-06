@@ -91,10 +91,12 @@ function Master(textArea,acao){
     let texto = document.getElementById(textArea).value
 
     if (texto == ""){
+        responsiveVoice.speak("Não existe texto para criptografar ou descriptografar",'Brazilian Portuguese Female', {rate:1.2});
         alert("Não existe texto para criptografar ou descriptografar");
-    }
+    }   
     else{
         if (Object.keys(invalidChars).length > 0){
+            responsiveVoice.speak("Não é possivel criptografar ou descriptografar, pois Existe ao menos um caracter inválido no seu texto",'Brazilian Portuguese Female', {rate:1.2});
             alert("Não é possivel criptografar ou descriptografar, pois Existe ao menos um caracter inválido no seu texto");
         }
         else{
