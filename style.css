@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+body{
+    background-image: linear-gradient(to bottom, #dee2e6ff, #ced4daff, #adb5bdff, #6c757dff, #495057ff);
+    background-attachment: fixed; /*Garantir que gradiente cubra todo o documento*/
+    
+    height: 100vh; /*Tamanho da página*/
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    margin: 40px;                   /*Conforme Figma*/
+    gap: 20px;
+}
+
+.cabecalho{
+    width: 100vh;                   /*OK*/
+    height: 50px;                   /*OK*/
+}
+
+.Principal{
+    display: flex;                  /*OK*/
+    box-sizing: border-box;         /*OK*/
+    justify-content:center; /*OK*/
+
+    gap: 40px;
+}
+.Principal__Conteudo{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content:flex-start;
+    gap: 45px;
+}
+
+.Principal__Conteudo__Titulo{
+    color: #343A40;
+}
+
+.Principal__Conteudo__Base{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Principal__Conteudo__Base__Corpo{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.Principal__Conteudo__Base__Corpo__Botao{ /*OK*/
+    width: 34vh;                               /*BOM*/
+
+    font-weight: 280px;
+    font-size: 16px;
+    color: white;                           /*Conforme Figma*/
+
+    background: #0A3871;                    /*Conforme Figma*/
+    border: none;
+    border-radius: 24px;                      /*Conforme Figma*/
+    padding: 16px 24px;
+
+}
+
+.Principal__Conteudo__Base__Corpo__Entrada{
+    display: flex;
+    width: 70vh;
+    min-width: 321px;
+    min-height: 185px;
+    height: 40vh;
+    gap: 5px;                                       /*Precisa*/
+}
+
+.Principal__Conteudo__Base__Corpo__EntradaText{
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;                      /*Precisa*/
+    padding: 10px;                               /*Precisa*/
+
+    width: 35vh;/*70*/
+    /*min-width: 170px; /*321*/
+    /*min-height: 185px;*/
+    height: 40vh;
+
+    border-color: rgb(41, 39, 39);
+    border-radius: 5px;
+    
+    background-color: transparent;
+    font-family: "Inter", sans-serif; /*Conforme Figma*/
+    font-optical-sizing: auto;
+    font-weight: 32px;
+    font-style:normal;
+
+}
+#T1{
+    color: blue;
+}
+#T2{
+    color: red;
+}
+
+
+label{
+    color: #343A40;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+
+    width: 35vh;/*70*/
+    /*min-width: 170px; /*321*/
+    /*min-height: 185px;*/
+    height: 40vh;
+}
+
+.Principal__EsteticaLateral{
+    width: 60vh;
+    height: 90vh;
+    min-width: 340px;
+    min-height: 430px;
+
+    border-radius: 32px;         /*Conforme Figma*/
+    
+    display: flex;
+    box-sizing: border-box;
+
+    background-image: linear-gradient(to bottom,#0077b6,#0096c7,#00b4d8,#48cae4,#006400,#007200,#008000,#6c757dff, #495057ff); /*OK*/
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    /*gap: 32px;*/
+
+    align-items:center;
+
+    word-break: break-all;
+}
+.Principal__EsteticaLateral__Resultado{
+    color: black;
+    font-size: 30px;
+}
+
+
+.Principal__EsteticaLateral_Titulo{
+    
+    /*font-size: 24px;                /*Conforme Figma*/
+    font-family: "Inter", sans-serif; /*Conforme Figma*/
+    font-optical-sizing: auto;
+    font-weight: 24px;
+    font-style:normal;
+    padding: 20px;
+    align-items: center;
+}
+
+.Principal__EsteticaLateral_Texto{
+    padding: 20px;
+    font-family: "Inter", sans-serif;  /*Conforme Figma*/
+    font-optical-sizing: auto;
+    font-weight: 16px;
+    font-style:normal;
+    align-items: center;
+
+}
+
+#cop{
+
+    display: none;
+    position: relative;
+    bottom: 0%;
+    margin-top: 20px;
+}
+

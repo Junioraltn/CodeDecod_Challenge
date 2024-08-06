@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8"> 
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Des-Criptografia</title>
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <header class="Cabecalho"> <img src="image/Frame 6.png" alt="Letra a da Alura"></header>
+        <main class="Principal">
+            <session class="Principal__Conteudo">
+                <h1 class="Principal__Conteudo__Titulo">Máquina de Criptografia e Descriptografia</h1>
+                <div class="Principal__Conteudo__Base">
+                    <div class="Principal__Conteudo__Base__Corpo">
+                        <div class="Principal__Conteudo__Base__Corpo__Entrada">
+                            <label style="color: blue;">Criptografar <textarea id="T1" class="Principal__Conteudo__Base__Corpo__EntradaText" placeholder="Digite seu Texto"></textarea></label>
+                            <label style="color: red;">Descriptografar <textarea id="T2" class="Principal__Conteudo__Base__Corpo__EntradaText" placeholder="Digite seu Texto"></textarea></label>
+                        </div>
+                        <p id="Informativo"><img src="image/bi_exclamation-circle-fill.png" alt="Exclamação"> Apenas letras minúsculas e sem acento.</p>
+                        <div>
+                            <button onclick="Criptografar()" id="Criptografar" class="Principal__Conteudo__Base__Corpo__Botao">Criptografar</button>
+                            <button onclick="DesCriptografar()" id="DesCriptografar" class="Principal__Conteudo__Base__Corpo__Botao">Descriptografar</button>
+                        </div>
+                    </div>
+                </div>
+            </session>
+            <session class="Principal__EsteticaLateral">
+                    <p id="Comunicado" style="font-size: 30px;"> <p id="Comunicado2"></p> </p>
+                    <p id="TextoResultado" class="Principal__EsteticaLateral__Resultado"></p>
+                    <div id="Animacao">
+                        <object id="svgg" type="image/svg+xml" data="svg/High quality products 1 1.svg"></object>
+                        <p class="Principal__EsteticaLateral_Titulo">Nenhuma Mensagem Encontrada</p>
+                        <p class="Principal__EsteticaLateral_Texto">Digite o texto que você deseja criptografaar ou Descriptografar</p>
+                    </div>
+                    <button onclick="Copiar()" id="cop" class="Principal__Conteudo__Base__Corpo__Botao">Copiar</button>
+            </session>
+            
+        </main>
+        <footer>Fim da Mágica!</footer>
+        <script src="app.js" defer></script>
+    </body>
+
+</html>
