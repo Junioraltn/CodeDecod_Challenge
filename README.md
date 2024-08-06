@@ -1,20 +1,6 @@
-<h1 align="center"> Máquina de Criptografia e Descriptografia </h1>
+<h1 align="center">Máquina de Criptografia e Descriptografia</h1>
 
-
-
-# Índice 
-* [Título](#Máquina-de-Criptografia-e-Descriptografia)
-* [Índice](#índice)
-* [Descrição do Projeto](#Introdução)
-* [Funcionalidades e Demonstração da Aplicação](#funcionalidades-e-demonstração-da-aplicação)
-* [Acesso ao Projeto](#acesso-ao-projeto)
-* [Tecnologias utilizadas](#tecnologias-utilizadas)
-* [Pessoas Contribuidoras](#pessoas-contribuidoras)
-* [Pessoas Desenvolvedoras do Projeto](#pessoas-desenvolvedoras)
-* [Licença](#licença)
-* [Conclusão](#conclusão)
-
-<h2> Introdução </h2>
+# Introdução
 
 Este projeto é um desafio proposto pela Alura relativo ao programa de educação e empregabilidade de iniciativa da ORACLE + Alura.
 
@@ -25,20 +11,22 @@ Este projeto é um desafio proposto pela Alura relativo ao programa de educaçã
 Não é necessario qualquer instalação especifica para rodar os códigos, pois funciona diretamente no navegador. Entretanto, para copiar o texto, criptografado ou descriptografado, usando um botão da página, é verificado a permissão para acesso a área de transferencia através do navegador, e só funciona em páginas HTTPS.
 
 
-<h2>Funcionalidades e Demonstração da Aplicação</h2>
+# Funcionalidades e Demonstração da Aplicação
 
 
 
-<h2>Acesso ao Projeto</h2>
+# Acesso ao Projeto
 <p>A página pode ser acessado através do 
 <a href="https://junioraltn.github.io/CodDecod_Challenge/" target="_blank">Link</a> </p>
 
-
-<h2>Tecnologias utilizadas</h2>
+# Tecnologias utilizadas
 *Visual Studio Code;
 *API da Google;
 
-<h2>Pessoas Desenvolvedoras do Projeto</h2>
+# Pessoa Desenvolvedora
 *Ailton N. S. Júnior
+
+# Conclusão
+
 
 
