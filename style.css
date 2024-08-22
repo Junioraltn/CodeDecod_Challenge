@@ -112,9 +112,19 @@ label{
 }
 .Principal__Conteudo__Corpo__Botao{
 /*______Conf. do Corpo______*/
+    display: flex;
+    padding: 10px;
+/*______Disposição__________*/
+    justify-content: space-between;
+    gap: 10px;
+}
+.Botoes{
+/*______Conf. do Corpo______*/
     padding: 16px 24px;
 /*______Dimensões___________*/
     width: 34vh;
+/*______Disposição__________*/
+    gap: 20px;
 /*______Textos*_____________*/
     font-weight: 280px;
     font-size: 16px;
@@ -130,7 +140,6 @@ label{
 /*______Efeitos_____________*/
     cursor: pointer;
 }
-
 .Principal__EsteticaLateral{    /*__2° Session__________*/
 /*______Conf. do Corpo______*/
     display: flex;
@@ -190,11 +199,12 @@ label{
 /*______Estilização_________*/
     bottom: 0%;
 }
-
 @media (max-width:720px){
     .Principal{           /*__1° Session__________*/
         /*______Disposição__________*/
         flex-direction: column;
         align-items: center;
 }
-}
+.Principal__Conteudo__Corpo__Botao{
+    gap: 5px;
+}}
