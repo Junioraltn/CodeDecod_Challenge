@@ -191,3 +191,10 @@ label{
     bottom: 0%;
 }
 
+@media (max-width:720px){
+    .Principal{           /*__1° Session__________*/
+        /*______Disposição__________*/
+        flex-direction: column;
+        align-items: center;
+}
+}
