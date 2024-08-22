@@ -26,7 +26,7 @@ function animar (TextAreaPrincipal,cor,TextAreaSec){
     
     if (TextAreaPrincipal.value.trim() === "" && AnimacaoDisplay === "none"){
         document.getElementById("Animacao").style.display= "block";
-        document.getElementById("cop").style.display="none";
+        document.getElementById("Botaocopiar").style.display="none";
         document.getElementById("TextoResultado").innerHTML= "";
         document.getElementById("Comunicado").innerHTML= "";
         document.getElementById("Comunicado2").innerHTML= "";
@@ -61,7 +61,7 @@ entradaT1.addEventListener("input", function() {
 
     if (Object.keys(invalido).length == 0){
         document.getElementById("Animacao").style.display= "block";
-        document.getElementById("cop").style.display="none";
+        document.getElementById("Botaocopiar").style.display="none";
         document.getElementById("TextoResultado").innerHTML= "";
         document.getElementById("Comunicado").innerHTML= "";
         document.getElementById("Comunicado2").innerHTML= "";
@@ -149,7 +149,7 @@ function Master(textArea,acao){
             }
             document.getElementById("Animacao").style.display="none";
             document.getElementById("TextoResultado").innerHTML= resultado
-            document.getElementById("cop").style.display="block"
+            document.getElementById("Botaocopiar").style.display="block"
             return resultado
         }
     }

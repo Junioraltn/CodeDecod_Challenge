@@ -1,176 +1,193 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+:root{
+    --largura: 100vw;
+    --altura: 100vh;
+    --cor-fundo-body: linear-gradient(to bottom, #dee2e6ff, #ced4daff, #adb5bdff, #6c757dff, #495057ff);
+    --cor-fundo-lateralResultado:linear-gradient(to bottom,#0077b6,#0096c7,#00b4d8,#48cae4,#006400,#007200,#008000,#6c757dff, #495057ff);
+    --cor-fundo-botao-off: #343a40;
+    --cor-fundo-botao-in: #55157a;
+    --fonte-primaria: "Inter", sans-serif;
+}
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     color: white;
 }
 
+.cabecalho{
+    width: 100vh;
+    height: 50px;
+}
+
 body{
-    background-image: linear-gradient(to bottom, #dee2e6ff, #ced4daff, #adb5bdff, #6c757dff, #495057ff);
-    background-attachment: fixed; /*Garantir que gradiente cubra todo o documento*/
-    
-    height: 100vh; /*Tamanho da página*/
+/*______Conf. do Corpo______*/
     display: flex;
     box-sizing: border-box;
+    margin: 40px;
+/*______Disposição__________*/
     flex-direction: column;
-    margin: 40px;                   /*Conforme Figma*/
     gap: 20px;
+/*______Estilização_________*/
+    background-image: var(--cor-fundo-body);
+    background-attachment: fixed; /*Garantir que gradiente cubra todo o documento*/
 }
-
-.cabecalho{
-    width: 100vh;                   /*OK*/
-    height: 50px;                   /*OK*/
-}
-
-.Principal{
-    display: flex;                  /*OK*/
-    box-sizing: border-box;         /*OK*/
-    justify-content:center; /*OK*/
-
+.Principal{                     /*Main*/
+/*______Conf. do Corpo______*/
+    display: flex;
+    box-sizing: border-box;
+/*______Disposição__________*/
+    justify-content:center;
     gap: 40px;
 }
-.Principal__Conteudo{
+.Principal__Conteudo{           /*__1° Session__________*/
+/*______Conf. do Corpo______*/
     display: flex;
-    align-items: center;
+/*______Disposição__________*/
     flex-direction: column;
     justify-content:flex-start;
+    align-items: center;
     gap: 45px;
+/*______Dimensões___________*/
+    width: calc(590px * 100vw/1067px);/*20-08*/   
 }
-
 .Principal__Conteudo__Titulo{
     color: #343A40;
 }
-
-.Principal__Conteudo__Base{
+.Principal__Conteudo__Corpo{
+/*______Conf. do Corpo______*/
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.Principal__Conteudo__Base__Corpo{
-    display: flex;
+/*______Dimensões___________*/
+    width: 100%;/*20-08 <---RESOLVIDO-->*/
+/*______Disposição__________*/
     flex-direction: column;
+    align-items: center;
     gap: 20px;
 }
-
-.Principal__Conteudo__Base__Corpo__Botao{ /*OK*/
-    width: 34vh;                               /*BOM*/
-
-    font-weight: 280px;
-    font-size: 16px;
-    color: white;                           /*Conforme Figma*/
-
-    background: #0A3871;                    /*Conforme Figma*/
-    border: none;
-    border-radius: 24px;                      /*Conforme Figma*/
-    padding: 16px 24px;
-
-}
-
-.Principal__Conteudo__Base__Corpo__Entrada{
+.Principal__Conteudo__Corpo__Entrada{
+/*______Conf. do Corpo______*/
     display: flex;
-    width: 70vh;
-    min-width: 321px;
-    min-height: 185px;
-    height: 40vh;
-    gap: 5px;                                       /*Precisa*/
+/*______Dimensões___________*/
+    width: 100%;
+/*______Disposição__________*/
+    flex-wrap: wrap; /*Quebra o elemento para a próxima linha*/
+    /*height: 40vh; */
+    gap: 5px;                                   /*Precisa*/
 }
-
-.Principal__Conteudo__Base__Corpo__EntradaText{
+.Principal__Conteudo__Corpo__EntradaText{
+/*______Conf. do Corpo______*/
     display: flex;
-    justify-content: space-between;
-    box-sizing: border-box;                      /*Precisa*/
+    box-sizing: border-box;                    /*Precisa*/
     padding: 10px;                               /*Precisa*/
-
-    width: 35vh;/*70*/
-    /*min-width: 170px; /*321*/
-    /*min-height: 185px;*/
-    height: 40vh;
-
+/*______Dimensões___________*/
+    min-width: 115px;/*20-08*/
+    height: 230px; /*40*/
+/*______Disposição__________*/
+    justify-content: space-between;
+/*______Estilização_________*/
+    background-color: transparent;
     border-color: rgb(41, 39, 39);
     border-radius: 5px;
-    
-    background-color: transparent;
-    font-family: "Inter", sans-serif; /*Conforme Figma*/
+/*______Textos*_____________*/
+    font-family: var(--fonte-primaria);/*20-08*/
     font-optical-sizing: auto;
     font-weight: 32px;
     font-style:normal;
-
 }
-#T1{
-    color: blue;
-}
-#T2{
-    color: red;
-}
-
-
+#T1{color: blue;}
+#T2{color: red;}
 label{
-    color: #343A40;
+/*______Conf. do Corpo______*/
     display: flex;
     box-sizing: border-box;
-    flex-direction: column;
-
-    width: 35vh;/*70*/
-    /*min-width: 170px; /*321*/
-    /*min-height: 185px;*/
+    padding: 5px;/*20-08*/
+/*______Dimensões___________*/
+    width: 49%;/*20-08*/
     height: 40vh;
+/*______Disposição__________*/
+    flex-direction: column;
+/*______Textos*_____________*/
+    color: #343A40;
+}
+.Principal__Conteudo__Corpo__Botao{
+/*______Conf. do Corpo______*/
+    padding: 16px 24px;
+/*______Dimensões___________*/
+    width: 34vh;
+/*______Textos*_____________*/
+    font-weight: 280px;
+    font-size: 16px;
+    color: white;
+/*______Estilização_________*/
+    background: var(--cor-fundo-botao-off);
+    border: none;
+    border-radius: 24px;
+}
+.Principal__Conteudo__Corpo__Botao:hover{
+ /*______Estilização_________*/   
+    background-color: var(--cor-fundo-botao-in);
+/*______Efeitos_____________*/
+    cursor: pointer;
 }
 
-.Principal__EsteticaLateral{
-    width: 60vh;
-    height: 90vh;
-    min-width: 340px;
-    min-height: 430px;
-
-    border-radius: 32px;         /*Conforme Figma*/
-    
+.Principal__EsteticaLateral{    /*__2° Session__________*/
+/*______Conf. do Corpo______*/
     display: flex;
     box-sizing: border-box;
-
-    background-image: linear-gradient(to bottom,#0077b6,#0096c7,#00b4d8,#48cae4,#006400,#007200,#008000,#6c757dff, #495057ff); /*OK*/
+    padding: 10px;
+/*______Dimensões___________*/
+    width: calc(330px * 100vw/1067px);/*20-08*/
+    max-width: 330px;/*20-08*/
+    height: 460px;
+/*______Disposição__________*/
     justify-content: center;
     flex-direction: column;
-    padding: 10px;
-    /*gap: 32px;*/
-
     align-items:center;
-
+/*______Estilização_________*/
+    background-image: var(--cor-fundo-lateralResultado);
+    border-radius: 32px;
+/*______Efeitos_____________*/
     word-break: break-all;
 }
+#svgg{
+/*______Dimensões___________*/
+    width: 100%;
+}
 .Principal__EsteticaLateral__Resultado{
+/*______Textos*_____________*/
     color: black;
     font-size: 30px;
 }
-
-
 .Principal__EsteticaLateral_Titulo{
-    
-    /*font-size: 24px;                /*Conforme Figma*/
-    font-family: "Inter", sans-serif; /*Conforme Figma*/
+/*______Conf. do Corpo______*/
+    padding: 20px;
+/*______Disposição__________*/
+    align-items: center;
+/*______Textos*_____________*/
+    font-family: var(--fonte-primaria);/*20-08*/
     font-optical-sizing: auto;
     font-weight: 24px;
     font-style:normal;
-    padding: 20px;
-    align-items: center;
 }
-
 .Principal__EsteticaLateral_Texto{
+/*______Conf. do Corpo______*/
     padding: 20px;
-    font-family: "Inter", sans-serif;  /*Conforme Figma*/
+/*______Disposição__________*/
+    align-items: center;
+/*______Textos*_____________*/
+    font-family: var(--fonte-primaria);/*20-08*/
     font-optical-sizing: auto;
     font-weight: 16px;
     font-style:normal;
-    align-items: center;
-
 }
-
-#cop{
-
+#Botaocopiar{
+/*______Conf. do Corpo______*/
     display: none;
-    position: relative;
-    bottom: 0%;
     margin-top: 20px;
+/*______Disposição__________*/
+    position: relative;
+/*______Estilização_________*/
+    bottom: 0%;
 }
 
