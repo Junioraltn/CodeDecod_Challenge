@@ -134,7 +134,7 @@ label{
     border: none;
     border-radius: 24px;
 }
-.Principal__Conteudo__Corpo__Botao:hover{
+.Botoes:hover{
  /*______Estilização_________*/   
     background-color: var(--cor-fundo-botao-in);
 /*______Efeitos_____________*/
